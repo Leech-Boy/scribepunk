@@ -1,4 +1,10 @@
 ---
 layout: default
 ---
-<p class="text-[{{ site.green }}]">Essays</p>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}" class="text-[{{ site.green }}]">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
