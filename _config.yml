@@ -21,8 +21,8 @@
 title: Scribepunk
 email: your-email@example.com
 description: A place for me to inflict my thoughts on unsuspecting victims.
-baseurl: "scribepunk" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://leech-boy.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 substack-url: https://josiahleach.substack.com/
 
