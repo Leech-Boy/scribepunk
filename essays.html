@@ -1,10 +1,7 @@
 ---
 layout: default
 ---
-<ul>
   {% for post in site.posts %}
-    <li>
-      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="sbp">{{ post.title }}</a>
-    </li>
+    <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="sbp">{{ post.title }}</a>
+    <p class="sbp">{{ post.content | split:'<!--excerpt-start-->' | last | split:'<!--excerpt-end-->' | first }}</p>
   {% endfor %}
-</ul>
