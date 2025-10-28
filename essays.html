@@ -3,5 +3,6 @@ layout: default
 ---
   {% for post in site.posts %}
     <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="sbp">{{ post.title }}</a>
-    <p class="sbp">{{ post.content | split:'<!--excerpt-start-->' | last | split:'<!--excerpt-end-->' | first }}</p>
+    {{ post.content | split:'<!--excerpt-start-->' | last | split:'<!--excerpt-end-->' | first }}
+    <p>...</p>
   {% endfor %}
