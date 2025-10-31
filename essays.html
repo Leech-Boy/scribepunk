@@ -2,7 +2,9 @@
 layout: default
 ---
   {% for post in site.posts %}
-    <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="sbp">{{ post.title }}</a>
-    {{ post.content | split:'<!--excerpt-start-->' | last | split:'<!--excerpt-end-->' | first }}
-    <p>...</p>
+    <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="preview">
+      <p class="preview-title">{{ post.title }}</p>
+      {{ post.content | split:'<!--excerpt-start-->' | last | split:'<!--excerpt-end-->' | first }}
+      <p>...</p>
+    </a>
   {% endfor %}
