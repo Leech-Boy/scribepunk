@@ -26,8 +26,6 @@ url: "https://leech-boy.github.io" # the base hostname & protocol for your site,
 
 substack-url: https://josiahleach.substack.com/
 
-green: "#12E100"
-
 # Build settings
 plugins:
   - jekyll-feed
