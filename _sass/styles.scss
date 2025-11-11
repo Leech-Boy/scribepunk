@@ -1,0 +1,100 @@
+.sb {
+  color: #12E100;
+  background-color: #000000;
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px;
+  margin: 0px;
+  font-size: 18px;
+  text-decoration-line: none;
+}
+
+html {
+  color: #12E100;
+  background-color: #000000;
+  min-height: 100%;
+  display: flex;
+  flex-flow: column;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  padding: 1% 20%;
+}
+
+.menubar {
+  color: #12E100;
+  font-size: 0px;
+  border-style: solid;
+  border-width: 1px;
+  width: max-content;
+  height: auto;
+  display: flex;
+}
+
+.sbp, p, h1, a {
+  color: #12E100;
+  font-size: 18px;
+}
+
+.window {
+  color: #12E100;
+  border-style: solid;
+  border-width: 2px;
+  flex-grow: 1;
+  padding: 5% 10%;
+}
+
+.stanza {
+  padding: 2px 0px;
+  margin: 18px 0px;
+}
+
+.line {
+  color: #12E100;
+  margin: 2px 0px;
+}
+
+.monospace {
+  color: #12E100;
+  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+  white-space: pre;
+}
+
+.monoline {
+  color: #12E100;
+  margin: 0px;
+  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+  white-space: pre;
+}
+
+hr {
+  border: 1px solid #12E100;
+}
+
+.preview-box {
+  outline: 1px solid;
+  margin: 18px 0px;
+  display: flex;
+  padding: 0px 16px;
+}
+
+.preview-content {
+  text-decoration-line: none;
+}
+
+.preview-title {
+  text-decoration-line: underline;
+  font-size: 20px;
+}
+
+.quote {
+  border-left-style: solid;
+  border-left-width: 2px;
+  padding: 5px 0px 5px 10px;
+}
