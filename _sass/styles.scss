@@ -37,9 +37,23 @@ body {
   display: flex;
 }
 
-.sbp, p, h1, a {
+.sbp, p, a {
   color: #12E100;
   font-size: 18px;
+}
+
+h1 {
+  color: #12E100;
+  font-size: 28px;
+}
+
+li {
+  font-size: 18px;
+}
+
+img {
+  width: calc(100% - 40px);
+  margin: 12px 20px;
 }
 
 .window {
@@ -70,7 +84,7 @@ body {
   color: #12E100;
   margin: 0px;
   font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
-  white-space: pre;
+  white-space: pre-wrap;
 }
 
 hr {
