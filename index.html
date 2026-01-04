@@ -1,14 +1,4 @@
 ---
-layout: default
+layout: feed
+category: substack
 ---
-{% for post in site.posts %}
-  {% if post.categories contains 'substack' %}
-    <div class="preview-box">
-      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="preview-content">
-        <p class="preview-title">{{ post.title }}</p>
-        {{ post.content | split:'<!--excerpt-start-->' | last | split:'<!--excerpt-end-->' | first }}
-        <p>...</p>
-      </a>
-    </div>
-  {% endif %}
-{% endfor %}
