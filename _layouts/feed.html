@@ -7,7 +7,7 @@ layout: default
       <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="preview-content">
         <p class="preview-title">{{ post.title }}</p>
         {% if post.subtitle %}
-          <p class="preview-subtitle">{{ post.subtitle }}</p>
+          <p>{{ post.subtitle }}</p>
         {% endif %}
         {% if post.content contains '<!--excerpt-start-->' %}
           {{ post.content | split:'<!--excerpt-start-->' | last | split:'<!--excerpt-end-->' | first }}

@@ -1,54 +1,31 @@
-.sb {
-  color: #12E100;
-  background-color: #000000;
-  border-style: solid;
-  border-width: 1px;
-  padding: 5px;
-  margin: 0px;
-  font-size: 18px;
-  text-decoration-line: none;
-}
+$green: #12E100;
 
+/* Basic layout of the website. Background and margins that all content goes in */
 html {
-  color: #12E100;
+  color: $green;
   background-color: #000000;
   min-height: 100%;
   display: flex;
   flex-flow: column;
   overflow-y: auto;
   scrollbar-gutter: stable;
+  font-size: 18px;
 }
 
 body {
-  min-height: 100%;
   display: flex;
   flex-flow: column;
   flex-grow: 1;
   padding: 1% 20%;
 }
 
-.menubar {
-  color: #12E100;
-  font-size: 0px;
-  border-style: solid;
-  border-width: 1px;
-  width: max-content;
-  height: auto;
-  display: flex;
-}
-
-.sbp, p, a {
-  color: #12E100;
-  font-size: 18px;
+/* Basic html elements */
+a {
+  color: $green;
 }
 
 h1 {
-  color: #12E100;
   font-size: 28px;
-}
-
-li {
-  font-size: 18px;
 }
 
 img {
@@ -56,41 +33,41 @@ img {
   margin: 12px 20px;
 }
 
+hr {
+  border: 1px solid $green;
+}
+
+/* Menu elements */
+.menubar {
+  border-style: solid;
+  border-width: 1px;
+  width: max-content;
+  height: auto;
+  display: flex;
+}
+
+.menu-button {
+  padding: 5px;
+  margin: 0px;
+  text-decoration-line: none;
+}
+
+/* The div that all content goes in */
 .window {
-  color: #12E100;
   border-style: solid;
   border-width: 2px;
   flex-grow: 1;
   padding: 5% 10%;
 }
 
-.stanza {
-  padding: 2px 0px;
-  margin: 18px 0px;
-}
-
-.line {
-  color: #12E100;
-  margin: 2px 0px;
-}
-
-.monospace {
-  color: #12E100;
-  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
-  white-space: pre;
-}
-
+/* Style for scribepunk writings */
 .monoline {
-  color: #12E100;
   margin: 0px;
   font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
   white-space: pre-wrap;
 }
 
-hr {
-  border: 1px solid #12E100;
-}
-
+/* Styles for essay previews */
 .preview-box {
   outline: 1px solid;
   margin: 18px 0px;
@@ -107,11 +84,7 @@ hr {
   font-size: 20px;
 }
 
-.preview-subtitle {
-  text-decoration-line: none;
-  font-size: 18px;
-}
-
+/* Style for quote blocks */
 .quote {
   border-left-style: solid;
   border-left-width: 2px;
